@@ -39,4 +39,4 @@ python compare_outputs.py -t post
 
 
 ## Do you need help?
-For any help send my an email [Gmail](mailto:rod.hpadilla@gmail.com)
+For any help send my an [email](mailto:rod.hpadilla@gmail.com)
