@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+*.log
+.mypy_cache/
+.DS_Store

@@ -1,0 +1,605 @@
+Device: sbx-nxos-mgmt.cisco.com
+
+
+======================================= show clock =======================================
+
+19:21:59.051 UTC Sun Aug 13 2023
+Time source is NTP
+
+
+================================== show int description ==================================
+
+
+-------------------------------------------------------------------------------
+Interface                Description                                            
+-------------------------------------------------------------------------------
+mgmt0                    DO NOT TOUCH CONFIG ON THIS INTERFACE
+
+-------------------------------------------------------------------------------
+Port          Type   Speed   Description
+-------------------------------------------------------------------------------
+Eth1/1        eth    10G     --
+Eth1/2        eth    10G     --
+Eth1/3        eth    10G     --
+Eth1/4        eth    10G     --
+Eth1/5        eth    10G     L3 Link
+Eth1/6        eth    10G     --
+Eth1/7        eth    10G     --
+Eth1/8        eth    10G     --
+Eth1/9        eth    10G     --
+Eth1/10       eth    10G     --
+Eth1/11       eth    10G     --
+Eth1/12       eth    10G     --
+Eth1/13       eth    10G     --
+Eth1/14       eth    10G     --
+Eth1/15       eth    10G     --
+Eth1/16       eth    10G     --
+Eth1/17       eth    10G     --
+Eth1/18       eth    10G     --
+Eth1/19       eth    10G     --
+Eth1/20       eth    10G     --
+Eth1/21       eth    10G     --
+Eth1/22       eth    10G     --
+Eth1/23       eth    10G     --
+Eth1/24       eth    10G     --
+Eth1/25       eth    10G     --
+Eth1/26       eth    10G     --
+Eth1/27       eth    10G     --
+Eth1/28       eth    10G     --
+Eth1/29       eth    10G     --
+Eth1/30       eth    10G     --
+Eth1/31       eth    10G     --
+Eth1/32       eth    10G     --
+Eth1/33       eth    10G     --
+Eth1/34       eth    10G     --
+Eth1/35       eth    10G     --
+Eth1/36       eth    10G     --
+Eth1/37       eth    10G     Configured by NETCONF
+Eth1/38       eth    10G     --
+Eth1/39       eth    10G     --
+Eth1/40       eth    10G     --
+Eth1/41       eth    10G     --
+Eth1/42       eth    10G     --
+Eth1/43       eth    10G     --
+Eth1/44       eth    10G     --
+Eth1/45       eth    10G     --
+Eth1/46       eth    10G     --
+Eth1/47       eth    10G     --
+Eth1/48       eth    10G     --
+Eth1/49       eth    10G     --
+Eth1/50       eth    10G     --
+Eth1/51       eth    10G     --
+Eth1/52       eth    10G     --
+Eth1/53       eth    10G     --
+Eth1/54       eth    10G     --
+Eth1/55       eth    10G     --
+Eth1/56       eth    10G     --
+Eth1/57       eth    10G     --
+Eth1/58       eth    10G     --
+Eth1/59       eth    10G     --
+Eth1/60       eth    10G     --
+Eth1/61       eth    10G     --
+Eth1/62       eth    10G     --
+Eth1/63       eth    10G     --
+Eth1/64       eth    10G     --
+
+-------------------------------------------------------------------------------
+Interface                Description                                            
+-------------------------------------------------------------------------------
+Po11                     --
+Po23                     --
+Po88                     --
+Po92                     --
+
+-------------------------------------------------------------------------------
+Interface                Description                                            
+-------------------------------------------------------------------------------
+Lo1                      --
+Lo9                      Configured using OpenConfig Model
+Lo30                     My Learning Lab Loopback
+Lo33                     My name is: PARANGARICUTIRIMICUARO
+Lo42                     CREATED_BY_ANSIBLE_ROLE
+Lo48                     ANSIBLE_ROLE_VARS
+Lo88                     --
+Lo98                     Configured using OpenConfig Model
+Lo99                     Full intf config via NETCONF
+Lo111                    IFACE TEST CP
+
+-------------------------------------------------------------------------------
+Interface                Description                                            
+-------------------------------------------------------------------------------
+Vlan1                    --
+Vlan100                  mgmt svi - DEMO PLEASE DON'T TOUCH
+Vlan101                  prod svi - DEMO PLEASE DON'T TOUCH
+Vlan102                  dev svi - DEMO PLEASE DON'T TOUCH
+Vlan103                  test svi - DEMO PLEASE DON'T TOUCH
+Vlan104                  security svi - DEMO PLEASE DON'T TOUCH
+Vlan105                  iot svi - DEMO PLEASE DON'T TOUCH
+Vlan402                  --
+Vlan404                  --
+Vlan1022                 --
+
+
+================================ show ip interface brief =================================
+
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan100              172.16.100.1    protocol-down/link-down/admin-down 
+Vlan101              172.16.101.1    protocol-down/link-down/admin-down 
+Vlan102              172.16.102.1    protocol-down/link-down/admin-down 
+Vlan103              172.16.103.1    protocol-down/link-down/admin-down 
+Vlan104              172.16.104.1    protocol-down/link-down/admin-down 
+Vlan105              172.16.105.1    protocol-down/link-down/admin-down 
+Vlan404              10.40.102.1     protocol-down/link-down/admin-up   
+Vlan1022             10.131.22.192   protocol-down/link-down/admin-up   
+Lo1                  172.16.0.1      protocol-up/link-up/admin-up       
+Lo33                 10.0.33.1       protocol-up/link-up/admin-up       
+Lo98                 10.98.98.1      protocol-up/link-up/admin-up       
+Lo99                 10.99.99.1      protocol-up/link-up/admin-up       
+Lo111                10.2.1.14       protocol-up/link-up/admin-up       
+Eth1/5               172.16.1.1      protocol-down/link-down/admin-down 
+
+
+===================================== show ip route ======================================
+
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.0.33.1/32, ubest/mbest: 2/0, attached
+    *via 10.0.33.1, Lo33, [0/0], 00:40:52, local
+    *via 10.0.33.1, Lo33, [0/0], 00:40:52, direct
+10.2.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.2.1.14, Lo111, [0/0], 02:21:52, direct
+10.2.1.14/32, ubest/mbest: 1/0, attached
+    *via 10.2.1.14, Lo111, [0/0], 02:21:52, local
+10.98.98.0/24, ubest/mbest: 1/0, attached
+    *via 10.98.98.1, Lo98, [0/0], 3d10h, direct
+10.98.98.1/32, ubest/mbest: 1/0, attached
+    *via 10.98.98.1, Lo98, [0/0], 3d10h, local
+10.99.99.0/24, ubest/mbest: 1/0, attached
+    *via 10.99.99.1, Lo99, [0/0], 3d10h, direct
+10.99.99.1/32, ubest/mbest: 1/0, attached
+    *via 10.99.99.1, Lo99, [0/0], 3d10h, local
+172.16.0.1/32, ubest/mbest: 2/0, attached
+    *via 172.16.0.1, Lo1, [0/0], 3d10h, local
+    *via 172.16.0.1, Lo1, [0/0], 3d10h, direct
+
+
+
+===================================== show inventory =====================================
+
+NAME: "Chassis",  DESCR: "Nexus9000 C9300v Chassis"              
+PID: N9K-C9300v          ,  VID:     ,  SN: 9QXOX90PJ62          
+
+NAME: "Slot 1",  DESCR: "Nexus 9000v 64 port Ethernet Module"   
+PID: N9K-X9364v          ,  VID:     ,  SN: 9QUIBRMWEUQ          
+
+NAME: "Slot 27",  DESCR: "Supervisor Module"                     
+PID: N9K-vSUP            ,  VID:     ,  SN: 9N3KD63KWT0          
+
+
+
+======================================== show run ========================================
+
+
+!Command: show running-config
+!Running configuration last done at: Sun Aug 13 19:18:37 2023
+!Time: Sun Aug 13 19:21:59 2023
+
+version 9.3(3) Bios:version  
+switchname sbx-ao
+vdc sbx-ao id 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 511
+  limit-resource u4route-mem minimum 248 maximum 248
+  limit-resource u6route-mem minimum 96 maximum 96
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+
+feature nxapi
+feature bash-shell
+feature scp-server
+feature ospf
+feature bgp
+feature netconf
+feature restconf
+feature grpc
+feature interface-vlan
+feature hsrp
+
+no password strength-check
+username admin password 5 $5$QHsjkRNS$AmVcv7uxx4xYtWYCiinb.T5Jmkzm1rQ7G0ccMjXqzIC  role network-admin
+username abc password 5 $5$ANHMGB$CRRJcYCXyyknFYBrjMNgLHbmEW/zmGNXBLa5KoA7lj1  role network-admin
+username abc passphrase  lifetime 99999 warntime 14 gracetime 3
+username hjj password 5 $5$Xfwm2Yzm$r5Whqe0S6a.U41P6PXub2VnKHZQHBqROP1c/uPjQe53  role network-operator
+username hjj passphrase  lifetime 99999 warntime 14 gracetime 3
+username kmn password 5 $5$YPvc2x1L$KkjK1XOcsCGBNsLSU2wIHQRxmZ/V6jNNCP.d2fOoaJA  role network-operator
+username kmn passphrase  lifetime 99999 warntime 14 gracetime 3
+username WXY password 5 $5$2S5vIYCW$5yULYH.uZEzU0IbBiieuQwUSFyz5jOKsZKvmV7VeYZD  role network-admin
+username WXY passphrase  lifetime 99999 warntime 14 gracetime 3
+username testuser password 5 $5$ldwwjQuK$fSyIE9Ygo9UbaPJ7BHvZKX7jNCGqAxUCQTl8YfLA/u5  role network-operator
+username testuser passphrase  lifetime 99999 warntime 14 gracetime 3
+username slim password 5 $5$ol4Yoddf$BS6SXxp.4NDVYxHNNYjzyjZ3FIiKqidGaE5U7tfKVv9  role network-operator
+username slim passphrase  lifetime 99999 warntime 14 gracetime 3
+
+banner motd ^
+Welcome to the DevNet Always On Sandbox for Open NX-OS
+
+This is a shared sandbox available for anyone to use to
+test APIs, explore features, and test scripts.  Please
+keep this in mind as you use it, and respect others use.
+
+The following programmability features are already enabled:
+  - NX-API
+  - NETCONF, RESTCONF, gRPC
+  - Native NX-OS and OpenConfig YANG Models
+
+Thanks for stopping by.
+^
+
+ip domain-lookup
+radius-server host 172.16.1.12 key 7 "VwritosWsgsziGio" authentication accounting 
+radius-server host 172.16.1.13 key 7 "VwritosWsgsziGio" authentication accounting 
+aaa group server radius AAA-Radius-Group 
+    server 172.16.1.12 
+    server 172.16.1.13 
+    use-vrf management
+object-group ip port oob-mgmt-ports
+  10 eq 22 
+  20 eq 443 
+  30 eq 4434 
+ipv6 access-list acl_ipv6
+ip access-list acl_tcp
+  2 permit tcp 12.234.56.97/13 13.235.46.97/9 
+  4 permit udp 12.234.56.97/13 13.235.46.97/9 
+ip access-list aclv4
+  33 permit tcp 1.1.1.2/32 3.2.2.2/32 
+  50 permit tcp 1.1.1.2/32 3.2.2.2/32 dscp 50 
+ip access-list test123test
+  10 permit ip 10.0.0.1/32 any 
+class-map type qos match-all math-vid-10
+copp profile strict
+snmp-server contact DevNet-Sandbox
+snmp-server location Always-On-Sandbox
+snmp-server source-interface traps mgmt0
+snmp-server user WXY network-admin auth md5 0x6950f494b98a5bd3faeafaad41e2ae58 priv 0x6950f494b98a5bd3faeafaad41e2ae58 localizedkey
+snmp-server user abc network-admin auth md5 0x2002b8948076c8f5c5c8b8efe00d9d37 localizedkey
+snmp-server user hjj network-operator auth md5 0xfe46d3ce6f97ce21cffc4ca660a252ac priv 0xfe46d3ce6f97ce21cffc4ca660a252ac localizedkey
+snmp-server user kmn network-operator auth md5 0xe5deccda26eea5b83199896a0898685a localizedkey
+snmp-server user slim network-operator auth md5 0x2c1dad3edc304eccd41294132b0618d2 priv 0x2c1dad3edc304eccd41294132b0618d2 localizedkey
+snmp-server user testuser network-operator auth md5 0x1c26606083ffc61c07ee372b8a807ec1 priv 0x1c26606083ffc61c07ee372b8a807ec1 localizedkey
+snmp-server user admin auth md5 0xe296d8d231ffa9be6276fd4c513b40a8 priv 0xe296d8d231ffa9be6276fd4c513b40a8 localizedkey engineID 128:0:0:9:3:0:187:44:252:27:1
+rmon event 1 description FATAL(1) owner PMON@FATAL
+rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+rmon event 3 description ERROR(3) owner PMON@ERROR
+rmon event 4 description WARNING(4) owner PMON@WARNING
+rmon event 5 description INFORMATION(5) owner PMON@INFO
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps system Clock-change-notification
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+snmp-server enable traps mmode cseNormalModeChangeNotify
+snmp-server enable traps mmode cseMaintModeChangeNotify
+snmp-server community DevNetSandboxReadSNMP group network-operator
+snmp-server community DevNetSandboxWriteSNMP group network-admin
+ntp server 172.16.0.1 use-vrf default
+ntp peer 172.16.1.11 use-vrf management key 1
+ntp source-interface mgmt0
+ntp authenticate
+ntp authentication-key 1 md5 QPTFmtc 7
+
+vlan 1-9,42,100-105,200,409,441-442
+vlan 42
+  name CONFIGURED_WITH_ANSIBLE
+vlan 100
+  name mgmt
+vlan 101
+  name LL_VLAN_DEMO1
+vlan 102
+  name dev
+vlan 103
+  name test
+vlan 104
+  name security
+vlan 105
+  name iot
+vlan 409
+  state suspend
+vlan 441
+  state suspend
+  name test123
+vlan 442
+  state suspend
+  name test1234xs
+
+route-map HOST-SVI permit 11
+  match tag 54 
+route-map HOST-SVI-1 permit 11
+  match tag 54 
+vrf context management
+  ip route 0.0.0.0/0 10.10.20.254
+
+
+interface Vlan1
+
+interface Vlan100
+  description mgmt svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.100.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan101
+  description prod svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.101.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan102
+  description dev svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.102.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan103
+  description test svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.103.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan104
+  description security svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.104.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan105
+  description iot svi - DEMO PLEASE DON'T TOUCH
+  ip address 172.16.105.1/24
+  ip router ospf 1 area 0.0.0.0
+
+interface Vlan402
+  no shutdown
+  vrf member telco-tenant
+  ip address 10.40.102.1/24 tag 54321
+
+interface Vlan404
+  no shutdown
+  ip address 10.40.102.1/24
+
+interface Vlan1022
+  no shutdown
+  ip address 10.131.22.192/24
+
+interface port-channel11
+  switchport mode trunk
+  switchport trunk allowed vlan 100-110
+
+interface port-channel23
+  switchport trunk native vlan 406
+  switchport trunk allowed vlan 524-526
+  mtu 9216
+
+interface port-channel88
+
+interface port-channel92
+  switchport mode trunk
+  switchport trunk native vlan 406
+  switchport trunk allowed vlan 524-526
+
+interface Ethernet1/1
+  switchport mode trunk
+  switchport trunk allowed vlan 100-110
+  channel-group 11
+
+interface Ethernet1/2
+  switchport mode trunk
+  switchport trunk allowed vlan 100-110
+  channel-group 11
+
+interface Ethernet1/3
+
+interface Ethernet1/4
+
+interface Ethernet1/5
+  description L3 Link
+  no switchport
+  ip address 172.16.1.1/30
+  ip ospf network broadcast
+  no ip ospf passive-interface
+  ip router ospf 1 area 0.0.0.0
+
+interface Ethernet1/6
+
+interface Ethernet1/7
+
+interface Ethernet1/8
+
+interface Ethernet1/9
+
+interface Ethernet1/10
+
+interface Ethernet1/11
+
+interface Ethernet1/12
+
+interface Ethernet1/13
+
+interface Ethernet1/14
+
+interface Ethernet1/15
+
+interface Ethernet1/16
+
+interface Ethernet1/17
+
+interface Ethernet1/18
+
+interface Ethernet1/19
+
+interface Ethernet1/20
+
+interface Ethernet1/21
+  no switchport
+  mac-address 00bb.2cfc.1b08
+  ip ospf network point-to-point
+
+interface Ethernet1/22
+
+interface Ethernet1/23
+
+interface Ethernet1/24
+
+interface Ethernet1/25
+
+interface Ethernet1/26
+
+interface Ethernet1/27
+
+interface Ethernet1/28
+
+interface Ethernet1/29
+
+interface Ethernet1/30
+
+interface Ethernet1/31
+
+interface Ethernet1/32
+
+interface Ethernet1/33
+
+interface Ethernet1/34
+
+interface Ethernet1/35
+
+interface Ethernet1/36
+
+interface Ethernet1/37
+  description Configured by NETCONF
+
+interface Ethernet1/38
+
+interface Ethernet1/39
+
+interface Ethernet1/40
+
+interface Ethernet1/41
+
+interface Ethernet1/42
+
+interface Ethernet1/43
+
+interface Ethernet1/44
+
+interface Ethernet1/45
+
+interface Ethernet1/46
+
+interface Ethernet1/47
+
+interface Ethernet1/48
+
+interface Ethernet1/49
+
+interface Ethernet1/50
+
+interface Ethernet1/51
+
+interface Ethernet1/52
+
+interface Ethernet1/53
+
+interface Ethernet1/54
+
+interface Ethernet1/55
+
+interface Ethernet1/56
+
+interface Ethernet1/57
+
+interface Ethernet1/58
+
+interface Ethernet1/59
+
+interface Ethernet1/60
+
+interface Ethernet1/61
+
+interface Ethernet1/62
+
+interface Ethernet1/63
+
+interface Ethernet1/64
+
+interface mgmt0
+  description DO NOT TOUCH CONFIG ON THIS INTERFACE
+  vrf member management
+  ip address 10.10.20.95/24
+
+interface loopback1
+  ip address 172.16.0.1/32
+
+interface loopback9
+  description Configured using OpenConfig Model
+
+interface loopback30
+  description My Learning Lab Loopback
+
+interface loopback33
+  description My name is: PARANGARICUTIRIMICUARO
+  ip address 10.0.33.1/32
+
+interface loopback42
+  description CREATED_BY_ANSIBLE_ROLE
+
+interface loopback48
+  description ANSIBLE_ROLE_VARS
+
+interface loopback88
+
+interface loopback98
+  description Configured using OpenConfig Model
+  ip address 10.98.98.1/24
+
+interface loopback99
+  description Full intf config via NETCONF
+  ip address 10.99.99.1/24
+
+interface loopback111
+  description IFACE TEST CP
+  ip address 10.2.1.14/24
+line console
+  exec-timeout 0
+  terminal width  511
+line vty
+  exec-timeout 0
+boot nxos bootflash:/nxos.9.3.3.bin sup-1
+router ospf 1
+  router-id 172.16.0.1
+  passive-interface default
+router bgp 65535
+  router-id 172.16.0.1
+  timers prefix-peer-timeout 30
+  address-family ipv4 unicast
+    network 172.16.0.0/16
+  neighbor 172.16.0.2
+    remote-as 65535
+
+no logging console
+
+
